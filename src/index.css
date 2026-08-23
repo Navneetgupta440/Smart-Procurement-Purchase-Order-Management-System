@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Newsreader', Georgia, Cambria, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --color-paper: #F9F7F2;
+  --color-paper-light: #FFFFFF;
+  --color-paper-subtle: #F4F0E8;
+  --color-paper-muted: #EAE5D9;
+  --color-ink: #121212;
+  --color-ink-light: #2A2A2A;
+  --color-ink-muted: #666666;
+}
+
+@layer base {
+  body {
+    background-color: #F9F7F2;
+    color: #121212;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+  
+  ::selection {
+    background-color: #121212;
+    color: #F9F7F2;
+  }
+}
+
+/* Editorial aesthetic utility classes */
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editorial-card:hover {
+  border-color: rgba(18, 18, 18, 0.28);
+}
+
+.editorial-card-subtle {
+  background-color: #F4F0E8;
+  border: 1px solid rgba(18, 18, 18, 0.10);
+}
+
+.editorial-divider {
+  border-color: rgba(18, 18, 18, 0.12);
+}
+
+.editorial-eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #666666;
+  font-weight: 600;
+}
+
